@@ -10,6 +10,8 @@ PATH = 'content/'
 THEME = "theme"
 STATIC_PATHS = ("css", "fonts", "img", "js")
 THEME_STATIC_DIR = ""
+AUTHORS_SAVE_AS = False
+TAGS_SAVE_AS = False
 
 DEFAULT_DATE_FORMAT = "%B %d, %Y"
 TIMEZONE = 'Pacific/Auckland'

@@ -12,6 +12,7 @@ STATIC_PATHS = ("css", "fonts", "img", "js")
 THEME_STATIC_DIR = ""
 AUTHORS_SAVE_AS = False
 TAGS_SAVE_AS = False
+SUMMARY_MAX_LENGTH = 100
 
 DEFAULT_DATE_FORMAT = "%B %d, %Y"
 TIMEZONE = 'Pacific/Auckland'

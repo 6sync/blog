@@ -16,6 +16,7 @@ SUMMARY_MAX_LENGTH = 100
 
 DEFAULT_DATE_FORMAT = "%B %d, %Y"
 TIMEZONE = 'Pacific/Auckland'
+LOCALE = 'en_NZ'
 
 DEFAULT_LANG = u'en'
 

@@ -7,6 +7,9 @@ SITENAME = u'6sync | Blog'
 SITEURL = ''
 
 PATH = 'content/'
+THEME = "theme"
+STATIC_PATHS = ("css", "fonts", "img", "js")
+THEME_STATIC_DIR = ""
 
 TIMEZONE = 'Pacific/Auckland'
 

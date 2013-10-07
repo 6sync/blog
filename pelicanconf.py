@@ -11,6 +11,7 @@ THEME = "theme"
 STATIC_PATHS = ("css", "fonts", "img", "js")
 THEME_STATIC_DIR = ""
 
+DEFAULT_DATE_FORMAT = "%B %d, %Y"
 TIMEZONE = 'Pacific/Auckland'
 
 DEFAULT_LANG = u'en'

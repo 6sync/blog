@@ -1,6 +1,5 @@
 Title: Post title
 Date: 2013-08-10
-Category: 6sync
 Tags: lorem
 Slug: lorem-ipsum-dolor
 Author: Sam Collinson

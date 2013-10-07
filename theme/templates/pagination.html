@@ -1,11 +1,16 @@
 {% if DEFAULT_PAGINATION %}
-<p class="paginator">
-    {% if articles_page.has_previous() %}
-        <a href="{{ SITEURL }}/{{ articles_previous_page.url }}">&laquo;</a>
-    {% endif %}
-    Page {{ articles_page.number }} / {{ articles_paginator.num_pages }}
-    {% if articles_page.has_next() %}
-        <a href="{{ SITEURL }}/{{ articles_next_page.url }}">&raquo;</a>
-    {% endif %}
-</p>
+        <div class="row post">
+          <div class="col-lg-3 col-sm-2 meta"></div>
+          <div class="col-lg-9 col-sm-10 contents">
+            <h4>
+            {% if articles_page.has_previous() %}
+                <a href="{{ SITEURL }}/{{ articles_previous_page.url }}">&laquo;</a>
+            {% endif %}
+            Page {{ articles_page.number }} / {{ articles_paginator.num_pages }}
+            {% if articles_page.has_next() %}
+                <a href="{{ SITEURL }}/{{ articles_next_page.url }}">&raquo;</a>
+            {% endif %}
+            </h4>
+          </div>
+        </div>
 {% endif %}

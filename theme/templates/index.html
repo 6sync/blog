@@ -1,22 +1,25 @@
 {% extends "base.html" %}
-{% block content %}
-<section id="content">
-{% block content_title %}
-<h2>All articles</h2>
-{% endblock %}
 
-<ol id="post-list">
+{% block content %}
 {% for article in articles_page.object_list %}
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2> </header>
-                <footer class="post-info">
-                    <abbr class="published" title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </abbr>
-                    {% if article.author %}<address class="vcard author">By <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a></address>{% endif %}
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> {{ article.summary }} </div><!-- /.entry-content -->
-        </article></li>
+        <!-- post -->
+        <div class="row post">
+          <div class="col-lg-3 col-sm-2 meta">
+            <h3 class="date">{{ article.locale_date }}</h3>
+            <div class="author">by {{ article.author }}</div>
+            <div class="categories">Category: 6sync</div>
+          </div>
+          <div class="col-lg-9 col-sm-10 contents">
+            <hr class="medium grey">
+            <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
+            <hr class="medium grey">
+
+            {{ article.summary }}
+          </div>
+        </div>
+        <!--/post-->
 {% endfor %}
-</ol><!-- /#posts-list -->
+
 {% include 'pagination.html' %}
-</section><!-- /#content -->
+
 {% endblock content %}

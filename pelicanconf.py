@@ -7,11 +7,17 @@ SITENAME = u'6sync | Blog'
 SITEURL = ''
 
 PATH = 'content/'
-THEME = "theme"
+
 STATIC_PATHS = ("css", "fonts", "img", "js")
+DIRECT_TEMPLATES = ('index',)
+
+THEME = "theme"
 THEME_STATIC_DIR = ""
+
 AUTHORS_SAVE_AS = False
+AUTHOR_SAVE_AS = False
 TAGS_SAVE_AS = False
+TAG_SAVE_AS = False
 SUMMARY_MAX_LENGTH = 100
 
 DEFAULT_DATE_FORMAT = "%B %d, %Y"

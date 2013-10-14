@@ -22,7 +22,7 @@
           <div class="col-lg-3 col-sm-2 meta">
             <h3 class="date">{{ article.locale_date }}</h3>
             <div class="author">by {{ article.author }}</div>
-            <div class="categories">Category: 6sync</div>
+            <div class="categories">Category: <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></div>
           </div>
           <div class="col-lg-9 col-sm-10 contents">
             <hr class="medium grey">

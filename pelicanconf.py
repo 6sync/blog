@@ -4,7 +4,8 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Mario Danic'
 SITENAME = u'6sync | Blog'
-SITEURL = ''
+SITEURL = 'http://127.0.0.1:8000'
+RELATIVE_URLS = False
 
 PATH = 'content/'
 
